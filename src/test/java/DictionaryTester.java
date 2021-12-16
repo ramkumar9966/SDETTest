@@ -67,6 +67,10 @@ public class DictionaryTester {
                 System.out.println(word + " is a valid english word");
                 return true;
             }
+            else {
+                System.out.println(word + " is not a  valid english word");
+                return true;
+            }
         }
         return false;
     }
@@ -86,9 +90,10 @@ public class DictionaryTester {
         dictionary.findPossibleWords("WORKING");
     }
 
+
     @Test
-    public void Test_validate_lphi_Word() {
-        when(dictService.isEnglishWord("lphi")).thenReturn(isThisEnglish("lphi"));
-        Assert.assertTrue(dictionary.isEnglishWord("lphi"));
+    public void Test_validate_lpjj_Word() {
+        when(dictService.isEnglishWord("lpjj")).thenReturn(isThisEnglish("lpjj"));
+        Assert.assertTrue(dictionary.isEnglishWord("lpjj"));
     }
 }
